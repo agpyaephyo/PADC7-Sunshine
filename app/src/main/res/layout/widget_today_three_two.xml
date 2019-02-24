@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:columnCount="2">
+
+    <ImageView
+        android:id="@+id/iv_status_art"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="2"
+        android:layout_rowSpan="2"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_vertical"
+        android:maxHeight="@dimen/today_weather_widget_dimen"
+        android:maxWidth="@dimen/today_weather_widget_dimen"
+        tools:src="@drawable/art_snow" />
+
+    <TextView
+        android:id="@+id/tv_max_temperature"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="fill_horizontal"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        tools:text="32"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_big" />
+
+
+    <TextView
+        android:id="@+id/tv_min_temperature"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        tools:text="28"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/text_heading_2x" />
+
+
+</GridLayout>

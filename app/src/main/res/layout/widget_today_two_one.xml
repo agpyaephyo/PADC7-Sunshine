@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_status_art"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="@dimen/today_weather_widget_dimen"
+        android:maxWidth="@dimen/today_weather_widget_dimen"
+        tools:src="@drawable/art_snow" />
+
+    <TextView
+        android:id="@+id/tv_max_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        tools:text="32"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_big" />
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:columnCount="2"
+    android:paddingBottom="@dimen/margin_medium_2">
+
+    <TextView
+        android:id="@+id/tv_date_day_combine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/margin_medium_2"
+        android:paddingTop="@dimen/margin_medium_2"
+        tools:text="Tomorrow, December 16"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/secondary_text" />
+
+    <ImageView
+        android:id="@+id/iv_status_art"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:adjustViewBounds="true"
+        android:maxHeight="@dimen/today_weather_widget_dimen"
+        android:maxWidth="@dimen/today_weather_widget_dimen"
+        tools:src="@drawable/art_snow" />
+
+    <TextView
+        android:id="@+id/tv_max_temperature"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill_horizontal"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        tools:text="32"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_max_temperature_widget" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill_horizontal"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:maxLines="2"
+        android:maxWidth="@dimen/today_weather_icon_dimen"
+        tools:text="Snow"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/secondary_text" />
+
+    <TextView
+        android:id="@+id/tv_min_temperature"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        tools:text="28"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/text_min_temperature_widget" />
+
+
+</GridLayout>

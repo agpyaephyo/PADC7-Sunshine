@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="weather_min_max_padding_left_right">@dimen/margin_medium_2</dimen>
+    <dimen name="weather_list_padding_left_right">@dimen/margin_extreme</dimen>
+
+    <dimen name="weather_detail_info_width">400dp</dimen>
+</resources>

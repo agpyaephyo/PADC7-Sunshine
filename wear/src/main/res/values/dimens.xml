@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="digital_text_size">40dp</dimen>
+    <dimen name="digital_text_size_round">45dp</dimen>
+    <dimen name="digital_x_offset">15dp</dimen>
+    <dimen name="digital_x_offset_round">25dp</dimen>
+    <dimen name="digital_y_offset">55dp</dimen>
+    <dimen name="digital_y_offset_round">60dp</dimen>
+    <dimen name="digital_line_height">32dp</dimen>
+    <dimen name="digital_line_offset">24dp</dimen>
+    <dimen name="digital_line_offset_y">18dp</dimen>
+
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+
+    <dimen name="text_hour">36sp</dimen>
+    <dimen name="text_minute_info">28sp</dimen>
+
+    <dimen name="text_regular">21sp</dimen>
+    <dimen name="text_regular_square">18sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+</resources>

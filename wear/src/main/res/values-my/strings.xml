@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/tools">
+
+    <!-- Weather Description -->
+    <string name="wd_200">မိုးရွာသွန်းမှု အနည်းငယ်ဖြင့် မိုးသက်မုန်တိုင်း တိုက်ခတ်</string>
+    <string name="wd_201">မိုးရွာသွန်းမှု ပုံမှန်ဖြင့် မိုးသက်မုန်တိုင်း တိုက်ခတ်</string>
+    <string name="wd_202">မိုးပြင်းထန်စွာရွာသွန်းပြီး မိုးသက်မုန်တိုင်း တိုက်ခတ်</string>
+    <string name="wd_210">မိုးသက်မုန်တိုင်း အပျော့စား တိုက်ခတ်</string>
+    <string name="wd_211">မိုးသက်မုန်တိုင်း တိုက်ခတ်</string>
+    <string name="wd_212">ပြင်းထန်သော မိုးသက်မုန်တိုင်း တိုက်ခတ်</string>
+    <string name="wd_221">မိုးသက်မုန်တိုင်း အကြမ်းစား တိုက်ခတ်</string>
+    <string name="wd_230">မိုးသက်မုန်တိုင်း တိုက်ခတ်ရု် အပျော့စား မိုးသီးများကြွေ</string>
+    <string name="wd_231">မိုးသက်မုန်တိုင်း တိုက်ခတ်ရု် မိုးသီးများကြွေ</string>
+    <string name="wd_232">မိုးသက်မုန်တိုင်း တိုက်ခတ်ရု် အပြင်းစား မိုးသီးများကြွေ</string>
+
+    <string name="wd_300">အပျော့စား မိုးသီးများကြွေ</string>
+    <string name="wd_301">မိုးသီးများကြွေ</string>
+    <string name="wd_302">အပြင်းစား မိုးသီးများကြွေ</string>
+    <string name="wd_310">အပျော့စား မိုးသီးများကြွေ ရု် မိုးရွာသွန်း</string>
+    <string name="wd_311">မိုးသီးများကြွေ ရု် မိုးရွာသွန်း</string>
+    <string name="wd_312">အပြင်းစား မိုးသီးများကြွေ ရု် မိုးရွာသွန်း</string>
+    <string name="wd_313">မိုးပြေးရွာရု် မိုးသီးကြွေ</string>
+    <string name="wd_314">မိုးပြေး ပျင်းထန်စွာ ရွာရု် မိုးသီးကြွေ</string>
+    <string name="wd_321">shower drizzle</string>
+
+    <string name="wd_500">မိုးပြေးရွာ</string>
+    <string name="wd_501">မိုးရွာ</string>
+    <string name="wd_502">မိုးပြင်းထန်စွာ ရွာ</string>
+    <string name="wd_503">မိုးအလွန်ပြင်းထန်စွာ ရွာ</string>
+    <string name="wd_504">လွန်ကဲ ပြင်းထန်လွန်းသော မိုးရွာသွန်း</string>
+    <string name="wd_511">အအေးလွန်ကဲသော မိုးရွာသွန်း</string>
+    <string name="wd_520">ပမာဏ နည်းသော မိုးပြေးရွာသွန်း</string>
+    <string name="wd_521">မိုးပြေးရွာသွန်း</string>
+    <string name="wd_522">ပမာဏ များသော မိုးပြေးရွာသွန်း</string>
+    <string name="wd_531">ပြင်းထန်သော မိုးပြေးရွာသွန်း</string>
+
+    <string name="wd_600">နှင်းကျ ပမာဏနည်း</string>
+    <string name="wd_601">နှင်းကျ</string>
+    <string name="wd_602">နှင်းကျ ပမာဏများ</string>
+    <string name="wd_611">နှင်းသီးကြွေ</string>
+    <string name="wd_612">နှင်းသီးများ နေရာကျဲကျဲ ကြွေ</string>
+    <string name="wd_615">မိုး အနည်းငယ်ရွာရု် နှင်းကျ</string>
+    <string name="wd_616">မိုးရွာရု် နှင်းကျ</string>
+    <string name="wd_620">နှင်းများ နေရာကျဲကျဲ ပမာဏနည်းနည်း ကျ</string>
+    <string name="wd_621">နေရာကျဲကျဲ နှင်းကျ</string>
+    <string name="wd_622">နှင်းများ နေရာကျဲကျဲ ပမာဏများများ ကျ</string>
+
+    <string name="wd_701">မြူကျ</string>
+    <string name="wd_711">မီးခိုးများ ဖုံးလွှမ်း</string>
+    <string name="wd_721">ဖုန်ထူထပ်</string>
+    <string name="wd_731">သဲနှင့် ဖုန်များ ပျံ့လွင့်</string>
+    <string name="wd_741">မြူပျင်းထန်စွာကျ</string>
+    <string name="wd_751">သဲမှုန်များ ဖုံးလွှမ်း</string>
+    <string name="wd_761">ဖုန်အမှုန့် များ ဖုံးလွှမ်း</string>
+    <string name="wd_762">မီးတောင်မှ ပြန့်လွင့်လာသော ပြာများ ဖုံးလွှမ်း</string>
+    <string name="wd_771">ရုတ်တရက် လေပြင်းတိုက်ခတ်</string>
+    <string name="wd_781">လေဆင်နှာမောင်းတိုက်ခတ်</string>
+
+    <string name="wd_800">ကောင်းကင် ကြည်လင်</string>
+    <string name="wd_801">တိမ်အနည်းငယ် ဖုန်းလွှမ်း</string>
+    <string name="wd_802">တိမ်များ နေရာအနှံ့ပြန့်ကျဲ</string>
+    <string name="wd_803">ကျိုးပဲ တိမ်တောင်</string>
+    <string name="wd_804">မိုးတိမ်ဖုံးလွှမ်း</string>
+
+    <string name="wd_900">လေဆင်နှာမောင်းတိုက်ခတ်</string>
+    <string name="wd_901">အပူပိုင်းမုန်တိုင်း တိုက်ခတ်</string>
+    <string name="wd_902">ဟာရီကိန်း မုန်တိုင်းတိုက်ခတ်</string>
+    <string name="wd_903">အအေးဓါတ်ဖုန်းလွှမ်း</string>
+    <string name="wd_904">အပူဓါတ်ဖုန်းလွှမ်း</string>
+    <string name="wd_905">လေပြင်းတိုက်ခတ်</string>
+    <string name="wd_906">မိုးသီးကြွေ</string>
+
+    <string name="wd_951">ရာသီဉတုသာယာ</string>
+    <string name="wd_952">လေနုအေး တိုက်ခတ်</string>
+    <string name="wd_953">လေပြေ တိုက်ခတ်</string>
+    <string name="wd_954">လေများ တိုက်ခတ်</string>
+    <string name="wd_955">လတ်ဆတ်သောလေများ တိုက်ခတ်</string>
+    <string name="wd_956">လေများ တိုက်ခတ်</string>
+    <string name="wd_957">လေများ တိုက်ခတ် လေပြင်းဖြစ်လုနီး</string>
+    <string name="wd_958">လေပြင်းတိုက်ခတ်</string>
+    <string name="wd_959">ပြင်းထန်သော လေပြင်းတိုက်ခတ်</string>
+    <string name="wd_960">မုန်တိုင်းတိုက်ခတ်</string>
+    <string name="wd_961">ပြင်းထန်သော မုန်တိုင်းတိုက်ခတ်</string>
+    <string name="wd_962">ဟာရီကိန်းတိုက်ခတ်</string>
+</resources>

@@ -1,0 +1,20 @@
+<resources>>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="ForecastListTheme" parent="AppTheme">
+        <item name="toolbarStyle">@style/Toolbar</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="ForecastDetailTheme" parent="AppTheme">
+        <item name="toolbarStyle">@style/ToolbarDetail</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowEnterTransition">@transition/screen_transition_enter</item>
+        <item name="android:windowExitTransition">@transition/screen_transition_exit</item>
+    </style>
+</resources>

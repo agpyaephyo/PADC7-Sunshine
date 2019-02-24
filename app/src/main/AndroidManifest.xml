@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="net.aung.sunshine">
+
+    <permission
+        android:name="net.aung.sunshine.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- perform network access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- permissions required by SyncAdapter -->
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <!-- Check internet connectivity state in InternetConnectivityStateReceiver -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- prevent the processor from sleeping when you receive the message. Because GcmReciever is inherited from WakefulBroadcastReceiver -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- allow our App to register the receive messages from GCM -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- custom permission with our package name - so that no other Android App can register to receive messages intended for our App -->
+    <uses-permission android:name="net.aung.sunshine.permission.C2D_MESSAGE" />
+
+    <!-- for place picker -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".SunshineApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/android_api_key" />
+
+        <activity
+            android:name=".activities.ForecastActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ForecastListTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/action_settings"
+            android:parentActivityName=".activities.ForecastActivity" />
+        <activity
+            android:name=".activities.ForecastDetailActivity"
+            android:parentActivityName=".activities.ForecastActivity"
+            android:theme="@style/ForecastDetailTheme" />
+
+        <service android:name=".services.SunshineService" />
+
+        <!-- SyncAdapter's dummy authentication service -->
+        <service android:name=".sync.SunshineAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <!-- The SyncAdapter service -->
+        <service
+            android:name=".sync.SunshineSyncService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter" />
+        </service>
+        <service
+            android:name=".services.SunshineGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.SunshineInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.SunshineGCMRegistrationService"
+            android:exported="false" />
+        <service
+            android:name=".services.TodayWidgetIntentService"
+            android:exported="false" />
+        <service
+            android:name=".services.WeatherListWidgetRemoteViewsService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+        <service
+            android:name=".muzei.WeatherMuzeiSource"
+            android:description="@string/muzei_description"
+            android:icon="@drawable/ic_muzei"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.google.android.apps.muzei.api.MuzeiArtSource" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".receivers.system.PowerConnectedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.system.PowerDisconnectedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.system.InternetConnectivityStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.internal.DataSyncAlarmReceiver" />
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.internet.RECEIVE" />
+                <action android:name="com.google.android.c2dm.internet.REGISTRATION" />
+
+                <category android:name="net.aung.sunshine" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".widgets.TodayWidgetProvider"
+            android:label="@string/title_widget_today">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="net.aung.sunshine.ACTION_DATA_UPDATED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_today" />
+        </receiver>
+        <receiver
+            android:name=".widgets.WeatherListWidgetProvider"
+            android:label="@string/title_widget_weather_list">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="net.aung.sunshine.ACTION_DATA_UPDATED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_list" />
+        </receiver>
+
+        <provider
+            android:name=".data.persistence.WeatherProvider"
+            android:authorities="@string/content_authority"
+            android:exported="false"
+            android:syncable="true" />
+
+        <activity android:name=".activities.ReplyActivity" />
+    </application>
+
+</manifest>

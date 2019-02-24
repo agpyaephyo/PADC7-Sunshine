@@ -1,0 +1,177 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Sunshine</string>
+
+    <!-- Content Provider Related -->
+    <string name="content_authority" translatable="false">net.aung.sunshine</string>
+
+    <!-- GCM Sender Id -->
+    <string name="gcm_default_sender_id" translatable="false">587068175212</string>
+
+    <!-- Android Api Key for Places Api -->
+    <string name="android_api_key" translatable="false">AIzaSyAgTi614kepNw3YVpL8XyJ7OPIfkvbRDCw</string>
+
+    <!-- actions in toolbar -->
+    <string name="action_show_city">Show My City on Map</string>
+    <string name="action_share">Share</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="lbl_today">Today</string>
+    <string name="lbl_tomorrow">Tomorrow</string>
+    <string name="lbl_humidity">Humidity :</string>
+    <string name="lbl_pressure">Pressure :</string>
+    <string name="lbl_wind">Wind :</string>
+
+    <string name="pref_location_is_latlng" translatable="false">pref_location_is_latlng</string>
+    <string name="pref_location_lat" translatable="false">pref_location_lat</string>
+    <string name="pref_location_lng" translatable="false">pref_location_lng</string>
+
+    <!-- Preferences : Location -->
+    <string name="pref_location_key" translatable="false">pref_location_key</string>
+    <string name="pref_location_label">Pick city</string>
+    <string name="pref_location_default">Your current city</string>
+
+    <!-- Preferences : Unit -->
+    <string name="pref_unit_key" translatable="false">pref_unit_key</string>
+    <string name="pref_unit_label">Pick degree unit</string>
+    <string name="pref_unit_metric" translatable="false">Celsius</string>
+    <string name="pref_unit_imperial" translatable="false">Fahrenheit</string>
+
+    <!-- Preferences : Icon Pack -->
+    <string name="pref_icon_key" translatable="false">pref_icon_key</string>
+    <string name="pref_icon_label">Pick icon pack</string>
+    <string name="pref_icon_pack_default" translatable="false">Default</string>
+    <string name="pref_icon_pack_udacity" translatable="false">Udacity</string>
+
+    <!-- Preferences : Language -->
+    <string name="pref_language_key" translatable="false">pref_language_key</string>
+    <string name="pref_language_label">Pick desire language</string>
+    <string name="pref_language_english" translatable="false">English</string>
+    <string name="pref_language_myanmar" translatable="false">မြန်မာ</string>
+
+    <!-- Temperature format -->
+    <string name="format_temperature" translatable="false"><xliff:g id="temperature">%1$d</xliff:g>\u00B0</string> <!-- &#x00B0; -->
+
+    <!-- Account Type -->
+    <string name="sync_account_type" translatable="false">sunshine.aung.net</string> <!-- just reverse of package name -->
+
+    <!-- Notification Preferences -->
+    <string name="pref_last_notification" translatable="false">last_notification</string>
+    <string name="pref_enable_notification_label">Weather Notifications</string>
+    <string name="pref_enable_notification_key" translatable="false">pref_enable_notification</string>
+    <string name="pref_enable_notifications_true" translatable="false">Enabled</string>
+    <string name="pref_enable_notifications_false" translatable="false">Not Enabled</string>
+    <string name="pref_enable_notifications_default" translatable="false">true</string>
+
+    <string name="pref_server_response_status_key" translatable="false">pref_server_response_status_key</string>
+
+    <!-- Notification Format -->
+    <string name="format_notification">
+        Forecast : <xliff:g id="weather_condition">%1$s</xliff:g> - High: <xliff:g id="high_temp">%2$s</xliff:g>, Low: <xliff:g id="low_temp">%3$s</xliff:g>
+    </string>
+
+    <!-- Error messages to show when there is no weather data -->
+    <string name="no_weather_information">No Weather Information Available</string>
+    <string name="format_no_weather_information">No Weather Information Available. <xliff:g id="no_weather_reason">%1$s</xliff:g></string>
+    <string name="error_no_city_has_put">No city has put yet in the Settings.</string>
+    <string name="error_no_network">Your device doesn\'t have internet connectivity.</string>
+    <string name="error_invalid_server">The server of the App is trying to reach is not valid. Please update the App to its latest version.</string>
+    <string name="error_city_not_found">The city name, <xliff:g id="invalid_city_name">%1$s</xliff:g> is not valid.</string>
+    <string name="error_city_shared_pref_status">Invalid city (<xliff:g id="invalid_city_name">%1$s</xliff:g>)</string>
+
+    <!-- Weather Description -->
+    <string name="wd_200">thunderstorm with light rain</string>
+    <string name="wd_201">thunderstorm with rain</string>
+    <string name="wd_202">thunderstorm with heavy rain</string>
+    <string name="wd_210">light thunderstorm</string>
+    <string name="wd_211">thunderstorm</string>
+    <string name="wd_212">heavy thunderstorm</string>
+    <string name="wd_221">ragged thunderstorm</string>
+    <string name="wd_230">thunderstorm with light drizzle</string>
+    <string name="wd_231">thunderstorm with drizzle</string>
+    <string name="wd_232">thunderstorm with heavy drizzle</string>
+
+    <string name="wd_300">light intensity drizzle</string>
+    <string name="wd_301">drizzle</string>
+    <string name="wd_302">heavy intensity drizzle</string>
+    <string name="wd_310">light intensity drizzle rain</string>
+    <string name="wd_311">drizzle rain</string>
+    <string name="wd_312">heavy intensity drizzle rain</string>
+    <string name="wd_313">shower rain and drizzle</string>
+    <string name="wd_314">heavy shower rain and drizzle</string>
+    <string name="wd_321">shower drizzle</string>
+
+    <string name="wd_500">light rain</string>
+    <string name="wd_501">moderate rain</string>
+    <string name="wd_502">heavy intensity rain</string>
+    <string name="wd_503">very heavy rain</string>
+    <string name="wd_504">extreme rain</string>
+    <string name="wd_511">freezing rain</string>
+    <string name="wd_520">light intensity shower rain</string>
+    <string name="wd_521">shower rain</string>
+    <string name="wd_522">heavy intensity shower rain</string>
+    <string name="wd_531">ragged shower rain</string>
+
+    <string name="wd_600">light snow</string>
+    <string name="wd_601">snow</string>
+    <string name="wd_602">heavy snow</string>
+    <string name="wd_611">sleet</string>
+    <string name="wd_612">shower sleet</string>
+    <string name="wd_615">light rain and snow</string>
+    <string name="wd_616">rain and snow</string>
+    <string name="wd_620">light shower snow</string>
+    <string name="wd_621">shower snow</string>
+    <string name="wd_622">heavy shower snow</string>
+
+    <string name="wd_701">mist</string>
+    <string name="wd_711">smoke</string>
+    <string name="wd_721">haze</string>
+    <string name="wd_731">sand, dust whirls</string>
+    <string name="wd_741">fog</string>
+    <string name="wd_751">sand</string>
+    <string name="wd_761">dust</string>
+    <string name="wd_762">volcanic ash</string>
+    <string name="wd_771">squalls</string>
+    <string name="wd_781">tornado</string>
+
+    <string name="wd_800">clear sky</string>
+    <string name="wd_801">few clouds</string>
+    <string name="wd_802">scattered clouds</string>
+    <string name="wd_803">broken clouds</string>
+    <string name="wd_804">overcast clouds</string>
+
+    <string name="wd_900">tornado</string>
+    <string name="wd_901">tropical storm</string>
+    <string name="wd_902">hurricane</string>
+    <string name="wd_903">cold</string>
+    <string name="wd_904">hot</string>
+    <string name="wd_905">windy</string>
+    <string name="wd_906">hail</string>
+
+    <string name="wd_951">calm</string>
+    <string name="wd_952">light breeze</string>
+    <string name="wd_953">gentle breeze</string>
+    <string name="wd_954">moderate breeze</string>
+    <string name="wd_955">fresh breeze</string>
+    <string name="wd_956">strong breeze</string>
+    <string name="wd_957">high wind, near gale</string>
+    <string name="wd_958">gale</string>
+    <string name="wd_959">severe gale</string>
+    <string name="wd_960">storm</string>
+    <string name="wd_961">violent storm</string>
+    <string name="wd_962">hurricane</string>
+
+    <!-- Msgs -->
+    <string name="msg_new_data_has_refreshed">New weather data has been refreshed.</string>
+
+    <string name="detail_icon_transition_name" translatable="false">TN_DetailIcon</string>
+    <string name="pref_current_location_desc">Your current location</string>
+
+    <string name="title_widget_today">Sunshine Today Widget</string>
+    <string name="title_widget_weather_list">Sunshine Weather List Widget</string>
+
+    <string name="muzei_description">Wallpaper for today\'s weather</string>
+    <string name="lbl_map">Map</string>
+
+    <string name="dummy_long_text">The server of the App is trying to reach is not valid. Please update the App to its latest version. The server of the App is trying to reach is not valid. Please update the App to its latest version.</string>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_weather_status_detail">24sp</dimen>
+
+    <dimen name="text_max_temperature_detail">72sp</dimen>
+    <dimen name="text_min_temperature_detail">36sp</dimen>
+    <dimen name="text_min_max_temp_weather_list">24dp</dimen>
+
+    <dimen name="text_min_max_temp_weather_list_widget">16dp</dimen>
+
+    <dimen name="text_max_temperature_widget">45sp</dimen>
+    <dimen name="text_min_temperature_widget">27sp</dimen>
+</resources>

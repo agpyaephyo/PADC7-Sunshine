@@ -1,0 +1,88 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">Wear</string>
+    <string name="my_digital_name">Sunshine Watch Face</string>
+
+    <!-- Weather Description -->
+    <string name="wd_200">thunderstorm with light rain</string>
+    <string name="wd_201">thunderstorm with rain</string>
+    <string name="wd_202">thunderstorm with heavy rain</string>
+    <string name="wd_210">light thunderstorm</string>
+    <string name="wd_211">thunderstorm</string>
+    <string name="wd_212">heavy thunderstorm</string>
+    <string name="wd_221">ragged thunderstorm</string>
+    <string name="wd_230">thunderstorm with light drizzle</string>
+    <string name="wd_231">thunderstorm with drizzle</string>
+    <string name="wd_232">thunderstorm with heavy drizzle</string>
+
+    <string name="wd_300">light intensity drizzle</string>
+    <string name="wd_301">drizzle</string>
+    <string name="wd_302">heavy intensity drizzle</string>
+    <string name="wd_310">light intensity drizzle rain</string>
+    <string name="wd_311">drizzle rain</string>
+    <string name="wd_312">heavy intensity drizzle rain</string>
+    <string name="wd_313">shower rain and drizzle</string>
+    <string name="wd_314">heavy shower rain and drizzle</string>
+    <string name="wd_321">shower drizzle</string>
+
+    <string name="wd_500">light rain</string>
+    <string name="wd_501">moderate rain</string>
+    <string name="wd_502">heavy intensity rain</string>
+    <string name="wd_503">very heavy rain</string>
+    <string name="wd_504">extreme rain</string>
+    <string name="wd_511">freezing rain</string>
+    <string name="wd_520">light intensity shower rain</string>
+    <string name="wd_521">shower rain</string>
+    <string name="wd_522">heavy intensity shower rain</string>
+    <string name="wd_531">ragged shower rain</string>
+
+    <string name="wd_600">light snow</string>
+    <string name="wd_601">snow</string>
+    <string name="wd_602">heavy snow</string>
+    <string name="wd_611">sleet</string>
+    <string name="wd_612">shower sleet</string>
+    <string name="wd_615">light rain and snow</string>
+    <string name="wd_616">rain and snow</string>
+    <string name="wd_620">light shower snow</string>
+    <string name="wd_621">shower snow</string>
+    <string name="wd_622">heavy shower snow</string>
+
+    <string name="wd_701">mist</string>
+    <string name="wd_711">smoke</string>
+    <string name="wd_721">haze</string>
+    <string name="wd_731">sand, dust whirls</string>
+    <string name="wd_741">fog</string>
+    <string name="wd_751">sand</string>
+    <string name="wd_761">dust</string>
+    <string name="wd_762">volcanic ash</string>
+    <string name="wd_771">squalls</string>
+    <string name="wd_781">tornado</string>
+
+    <string name="wd_800">clear sky</string>
+    <string name="wd_801">few clouds</string>
+    <string name="wd_802">scattered clouds</string>
+    <string name="wd_803">broken clouds</string>
+    <string name="wd_804">overcast clouds</string>
+
+    <string name="wd_900">tornado</string>
+    <string name="wd_901">tropical storm</string>
+    <string name="wd_902">hurricane</string>
+    <string name="wd_903">cold</string>
+    <string name="wd_904">hot</string>
+    <string name="wd_905">windy</string>
+    <string name="wd_906">hail</string>
+
+    <string name="wd_951">calm</string>
+    <string name="wd_952">light breeze</string>
+    <string name="wd_953">gentle breeze</string>
+    <string name="wd_954">moderate breeze</string>
+    <string name="wd_955">fresh breeze</string>
+    <string name="wd_956">strong breeze</string>
+    <string name="wd_957">high wind, near gale</string>
+    <string name="wd_958">gale</string>
+    <string name="wd_959">severe gale</string>
+    <string name="wd_960">storm</string>
+    <string name="wd_961">violent storm</string>
+    <string name="wd_962">hurricane</string>
+
+    <string name="format_weather_description">ယနေ့<xliff:g id="weather_condition">%1$s</xliff:g> မည်</string>
+</resources>

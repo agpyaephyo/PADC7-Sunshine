@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/net.aung.sunshine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <net.aung.sunshine.components.CityEditTextPreference
+        android:key="@string/pref_location_key"
+        android:title="@string/pref_location_label"
+        android:defaultValue="@string/pref_location_default"
+        android:inputType="text"
+        android:singleLine="true"
+        custom:minLength="3"
+        />
+
+    <ListPreference
+        android:key="@string/pref_unit_key"
+        android:title="@string/pref_unit_label"
+        android:entries="@array/TemperatureUnits"
+        android:entryValues="@array/TemperatureUnits"
+        android:defaultValue="@string/pref_unit_metric"
+        />
+
+    <CheckBoxPreference
+        android:key="@string/pref_enable_notification_key"
+        android:title="@string/pref_enable_notification_label"
+        android:summaryOff="@string/pref_enable_notifications_false"
+        android:summaryOn="@string/pref_enable_notifications_true"
+        android:defaultValue="@string/pref_enable_notifications_default"
+        />
+
+    <ListPreference
+        android:key="@string/pref_icon_key"
+        android:title="@string/pref_icon_label"
+        android:entries="@array/IconPacks"
+        android:entryValues="@array/IconPacks"
+        android:defaultValue="@string/pref_icon_pack_default"
+        />
+
+    <ListPreference
+        android:key="@string/pref_language_key"
+        android:title="@string/pref_language_label"
+        android:entries="@array/SupportLanguage"
+        android:entryValues="@array/SupportLanguage"
+        android:defaultValue="@string/pref_language_english"
+        />
+
+</PreferenceScreen>

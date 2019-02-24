@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="TemperatureUnits">
+        <item>@string/pref_unit_metric</item>
+        <item>@string/pref_unit_imperial</item>
+    </string-array>
+
+    <string-array name="IconPacks">
+        <item>@string/pref_icon_pack_default</item>
+        <item>@string/pref_icon_pack_udacity</item>
+    </string-array>
+
+    <string-array name="SupportLanguage">
+        <item>@string/pref_language_english</item>
+        <item>@string/pref_language_myanmar</item>
+    </string-array>
+</resources>

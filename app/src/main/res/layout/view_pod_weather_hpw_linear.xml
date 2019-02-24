@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="weatherStatus"
+            type="net.aung.sunshine.data.vos.WeatherStatusVO" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/weather_detail_bg">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:fontFamily="sans-serif"
+                android:text="@string/lbl_humidity"
+                android:textColor="@color/detail_accent_label"
+                android:textSize="@dimen/text_regular_3x" />
+
+            <TextView
+                android:id="@+id/tv_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:fontFamily="sans-serif"
+                android:text="@{weatherStatus.humidityDisplay}"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_heading_1x"
+                tools:text="99 %" />
+
+            <TextView
+                android:id="@+id/lbl_pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:fontFamily="sans-serif"
+                android:text="@string/lbl_pressure"
+                android:textColor="@color/detail_accent_label"
+                android:textSize="@dimen/text_regular_3x" />
+
+            <TextView
+                android:id="@+id/tv_pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:fontFamily="sans-serif"
+                android:text="@{weatherStatus.pressureDisplay}"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_heading_1x"
+                tools:text="1023 hPa" />
+
+            <TextView
+                android:id="@+id/lbl_wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:fontFamily="sans-serif"
+                android:text="@string/lbl_wind"
+                android:textColor="@color/detail_accent_label"
+                android:textSize="@dimen/text_regular_3x" />
+
+            <TextView
+                android:id="@+id/tv_wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:text="@{weatherStatus.windSpeedDisplay}"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_heading_1x"
+                tools:text="3 km/h SE" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</layout>

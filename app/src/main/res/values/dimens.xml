@@ -1,0 +1,71 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Generic with ratio -->
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_medium_negative">-8dp</dimen>
+    <dimen name="margin_medium_2">16dp</dimen>
+    <dimen name="margin_medium_2_negative">-16dp</dimen>
+    <dimen name="margin_medium_3">18dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_xlarge">32dp</dimen>
+    <dimen name="margin_xxlarge">60dp</dimen>
+    <dimen name="margin_extreme">90dp</dimen>
+
+    <!-- Font size generic -->
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_regular">14sp</dimen>
+    <dimen name="text_regular_2x">16sp</dimen>
+    <dimen name="text_regular_3x">20sp</dimen>
+    <dimen name="text_heading_1x">24sp</dimen>
+    <dimen name="text_heading_2x">32sp</dimen>
+    <dimen name="text_big">40sp</dimen>
+    <dimen name="text_big_2x">60sp</dimen>
+    <dimen name="text_big_3x">80sp</dimen>
+
+    <!-- Font size specific -->
+    <dimen name="text_max_temperature_detail">80sp</dimen>
+    <dimen name="text_min_temperature_detail">48sp</dimen>
+    <dimen name="text_weather_status_detail">@dimen/text_heading_2x</dimen>
+
+    <dimen name="text_min_max_temp_weather_list">28dp</dimen>
+
+    <dimen name="text_min_max_temp_weather_list_widget">24dp</dimen>
+
+    <dimen name="icon_medium">60dp</dimen>
+
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="city_elevation">8dp</dimen>
+
+    <dimen name="loader_dimen">55dp</dimen>
+
+    <dimen name="weather_detail_body_padding">16dp</dimen>
+
+    <dimen name="today_weather_icon_dimen">140dp</dimen>
+    <dimen name="today_weather_icon_list_dimen">120dp</dimen>
+    <dimen name="weather_icon_dimen">40dp</dimen>
+    <dimen name="weather_list_padding_left_right">@dimen/margin_medium</dimen>
+    <dimen name="weather_min_max_padding_left_right">@dimen/margin_small</dimen>
+    <dimen name="weather_today_padding_left_right">0dp</dimen>
+    <dimen name="weather_list_margin">0dp</dimen>
+    <dimen name="weather_today_margin_top">0dp</dimen>
+
+    <dimen name="widget_today_xlarge_height">180dp</dimen>
+    <dimen name="widget_today_xlarge_width">250dp</dimen>
+
+    <dimen name="widget_list_height">110dp</dimen>
+    <dimen name="widget_list_width">180dp</dimen>
+
+    <dimen name="today_weather_widget_dimen">120dp</dimen>
+
+    <dimen name="text_max_temperature_widget">@dimen/text_max_temperature_detail</dimen>
+    <dimen name="text_min_temperature_widget">@dimen/text_min_temperature_detail</dimen>
+
+    <dimen name="big_picture_width">200dp</dimen>
+    <dimen name="big_picture_height">100dp</dimen>
+
+</resources>
